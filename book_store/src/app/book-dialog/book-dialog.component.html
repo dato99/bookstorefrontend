@@ -1,0 +1,58 @@
+<p-dialog 
+  [(visible)]="visible" 
+  [modal]="true" 
+  [closable]="false" 
+  header="{{ isEditing ? 'Edit Book' : 'Add Book' }}" 
+  [style]="{ width: '400px' }"
+>
+  <!-- Form Section -->
+  <form [formGroup]="bookForm" (ngSubmit)="onSaveDialog()">
+    <!-- Title Field -->
+    <div class="p-field">
+      <label for="title">Title</label>
+      <input
+        id="title"
+        type="text"
+        pInputText
+        formControlName="title"
+        [ngClass]="{ 'p-invalid': bookForm.get('title')?.invalid && bookForm.get('title')?.touched }"
+      />
+      <small *ngIf="bookForm.get('title')?.invalid && bookForm.get('title')?.touched" class="p-error">
+        Title is required.
+      </small>
+    </div>
+
+
+    <div class="p-field">
+      <label for="quantity">Quantity</label>
+      <div class="p-inputgroup">
+        <button type="button" pButton icon="pi pi-minus" (click)="decrementQuantity()"></button>
+        <input
+          id="quantity"
+          type="number"
+          pInputText
+          formControlName="quantity"
+          [ngClass]="{ 'p-invalid': bookForm.get('quantity')?.invalid && bookForm.get('quantity')?.touched }"
+        />
+        <button type="button" pButton icon="pi pi-plus" (click)="incrementQuantity()"></button>
+      </div>
+      <small *ngIf="bookForm.get('quantity')?.invalid && bookForm.get('quantity')?.touched" class="p-error">
+        Quantity must be at least 1.
+      </small>
+    </div>
+
+    <!-- Author Field -->
+    <div class="p-field">
+      <label for="author">Author</label>
+      <input
+        id="author"
+        type="text"
+        pInputText
+        formControlName="author"
+        [ngClass]="{ 'p-invalid': bookForm.get('author')?.invalid && bookForm.get('author')?.touched }"
+      />
+      <small *ngIf="bookForm.get('author')?.invalid && bookForm.get('author')?.touched" class="p-error">
+        Author is required.
+      </small>
+
+  

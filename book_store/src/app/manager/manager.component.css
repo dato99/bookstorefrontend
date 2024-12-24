@@ -1,0 +1,94 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #e9f1fd; 
+  }
+  
+  .manager-container {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+
+  }
+  
+  .header {
+    background-color: transparent;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .header h1 {
+    font-size: 36px;
+    color: #8aafd0; 
+    margin: 0;
+  }
+  
+  .header p {
+    font-size: 16px;
+    color: #8aafd0;
+    margin-top: 10px;
+  }
+  
+  .table-container {
+    background-color: #f9f9f9; 
+    border-radius: 12px;
+    padding: 20px;
+    margin-top: 20px;
+  }
+  
+  p-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  p-table th, p-table td {
+    text-align: left;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  p-table th {
+    font-weight: bold;
+    color: #2869CA; 
+    text-align: center;
+  }
+  
+  input[pInputText] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #d0d9e6;
+    border-radius: 8px;
+    background-color: #ffffff;
+  }
+  
+  input[pInputText]:focus {
+    border-color: #8aafd0;
+    outline: none;
+  }
+  
+  .button-container {
+    text-align: right;
+    margin-top: 20px;
+  }
+  
+  button[pButton] {
+    background-color: #8aafd0; 
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button[pButton]:hover {
+    background-color: #6c94bb; 
+  }
+  
+  
+  
+  

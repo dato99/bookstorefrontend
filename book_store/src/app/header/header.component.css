@@ -1,0 +1,38 @@
+.header {
+    display: flex;
+    text-align: left;
+    padding: 20px 0;
+    background-color: #e1eaf8;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .manager{
+    text-align: left;
+    margin-right: 150px;
+    font-size: 50px;
+    font-weight: bold;
+    color: #B7D4FF;
+  }
+  .store {
+    padding-right: 1000px;
+    display: flex;
+    margin-left: 150px;
+    font-size: 50px;
+    font-weight: bold;
+    color: #B7D4FF;
+  }
+  
+  .header p {
+    margin-left: 150px;
+    font-size: 16px;
+    color: #2869CA;
+  }
+
+
+
+  
+  
+
+
+
+  
